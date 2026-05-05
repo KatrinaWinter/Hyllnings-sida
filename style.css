@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  main section:first-of-type {
+    flex-direction: column;
+  }
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Merriweather", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-image: url(https://images.unsplash.com/photo-1517341392804-5f6daad2d02d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zmx5Z3BsYW58ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+main section:first-of-type {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main section:first-of-type h2 {
+  flex-basis: 100%;
+}
+
+main section:first-of-type p {
+  flex: 2;
+}
+
+main section:first-of-type a {
+  flex: 1;
+}
+
+.amelia {
+  transition: transform 0.3s ease;
+}
+
+.amelia:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.card {
+  background-color: rgb(252, 245, 239);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.226),
+    0 0 7px rgba(143, 150, 177, 0.452);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+} /* vill att Amilias ansikte centreras bättre...och att tittlen inte tar en gridd plats...*/
+
+.gallery img:first-of-type {
+  object-position: 50% 0%;
+}
+.gallery h3 {
+  grid-column: 1 / -1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair", serif;
+}
+
+h1 {
+  background-color: rgba(250, 235, 215, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 2.5rem;
+  color: brown;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: brown;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: rgb(129, 45, 3);
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: rgb(129, 45, 3);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(85, 55, 42);
+}
+
+a,
+a:visited {
+  color: rgb(184, 110, 1);
+}
+a:hover {
+  color: rgb(247, 204, 113);
+}
+
+a:active {
+  color: rgb(209, 69, 5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.5),
+    0 0 4px rgba(143, 150, 177, 0.5);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.3rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(184, 110, 1);
+  transition: all 0.2s ease;
+}
+
+footer a:hover {
+  color: rgb(247, 204, 113);
+  padding-left: 0.3rem;
+}
+
+footer section {
+  flex: 1;
+  padding: 0 1rem;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+  max-width: 60rem;
+  padding: 1rem;
+}
