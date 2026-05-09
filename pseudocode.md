@@ -51,3 +51,26 @@ START
     ANNARS
         SKRIV UT "Spelare 2 vann spelet!"
 SLUT
+
+
+## Knock out
+### Version 1
+
+START
+    Input antal spelare 
+    Sätt x spelares poäng till 0
+    Be spelare i turordning lägga in ett knockout nr. mellan 6-9
+    x spelare slutför varje runda i turårdning
+        FÖR runda 1 - 10
+            Spelare kastar två tärningar
+            Summera tärningskastet 
+            OM summan = knockout nr ges minuspoäng
+                Tärningskast nr. - 10 = ny summa
+                poäng = poäng + summan
+            ANNARS poäng = poäng + summan
+        SLUT FÖR skriv spelarns slutpoäng
+    Gämför spelarns poäng   
+    Spelare med > poäng vinner
+    SKRIV UT "Spelare x är vinnaren!"   
+SLUT
+
