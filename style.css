@@ -5,6 +5,13 @@
     flex-direction: column;
     text-align: center;
   }
+
+  footer section {
+    flex: unset;
+    margin: 0;
+    width: 100%;
+  }
+  
   main section:first-of-type {
     flex-direction: column;
   }
